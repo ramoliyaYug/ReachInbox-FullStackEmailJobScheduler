@@ -1,6 +1,6 @@
 import { useState, useEffect, type ReactNode } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import api from "../services/api";
+import api, { getBullMQBoardUrl } from "../services/api";
 import toast from "react-hot-toast";
 import { 
   LayoutDashboard, 
@@ -148,7 +148,7 @@ function MainLayout({ children }: Props) {
               Infrastructure
             </p>
             <a
-              href="http://localhost:5000/admin/queues"
+              href={getBullMQBoardUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3.5 rounded-xl border border-white/10 bg-slate-900/40 px-4 py-3 text-xs font-bold text-slate-300 hover:border-amber-500/40 hover:bg-slate-800 hover:text-amber-400 transition"

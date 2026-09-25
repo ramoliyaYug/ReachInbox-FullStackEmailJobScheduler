@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import api from "../services/api";
+import api, { getBullMQBoardUrl } from "../services/api";
 import StatCard from "../components/StatCard";
 import { 
   Clock, 
@@ -121,7 +121,7 @@ function Dashboard() {
             </Link>
 
             <a
-              href="http://localhost:5000/admin/queues"
+              href={getBullMQBoardUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-2xl border border-white/10 bg-slate-900/80 px-5 py-3.5 text-xs font-bold text-slate-200 hover:bg-slate-800 hover:text-amber-400 transition"
