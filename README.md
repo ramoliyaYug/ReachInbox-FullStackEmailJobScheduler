@@ -175,8 +175,3 @@ Open browser at `http://localhost:5173`.
 | `POST` | `/api/slack/connect` | Connect Slack Webhook |
 | `POST` | `/api/slack/disconnect` | Disconnect Slack Webhook |
 | `GET` | `/admin/queues` | Live BullMQ Board UI |
-
----
-
-## 👤 Author
-Developed for the **ReachInbox Full Stack Hiring Assignment**.
